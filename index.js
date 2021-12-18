@@ -25,7 +25,7 @@ var api = new ParseServer({
   masterKey: MASTER_KEY,
   serverURL: `${HOST}:${PORT}${API_PATH}`,
   liveQuery: {
-    classNames: ['Posts', 'Comments'],
+    classNames: ['Test'],
   }
 });
 
