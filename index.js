@@ -5,7 +5,8 @@ const app = express();
 const path = require('path');
 const {
   DATABASE_URL,
-  API_PATH, HOST,
+  API_PATH, 
+  HOST,
   CLOUD_CODE_MAIN,
   APP_ID,
   MASTER_KEY,
