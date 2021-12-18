@@ -13,7 +13,8 @@ const {
   APP_NAME,
   PORT,
   ADMIN_USERNAME,
-  ADMIN_PASSWORD
+  ADMIN_PASSWORD,
+  SERVER_URL
 } = require('./config');
 
 var api = new ParseServer({
@@ -30,7 +31,7 @@ var api = new ParseServer({
 var dashboard = new ParseDashboard({
   "apps": [
     {
-      "serverURL": `${HOST}:${PORT}${API_PATH}`,
+      "serverURL": SERVER_URL,
       "appId": APP_ID,
       "masterKey": MASTER_KEY,
       "appName": APP_NAME

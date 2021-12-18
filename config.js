@@ -2,6 +2,7 @@ require('dotenv').config();
 module.exports = {
     APP_NAME: process.env.APP_NAME || 'MyApp',
     HOST: process.env.HOST || 'http://localhost',
+    SERVER_URL: process.env.SERVER_URL || 'http://localhost:1337/api',
     API_PATH: process.env.API_PATH || '/api',
     DASHBOARD_PATH: process.env.DASHBOARD_PATH || '/dashboard',
     PORT: process.env.PORT || 1337,
