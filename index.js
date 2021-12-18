@@ -42,7 +42,7 @@ var dashboard = new ParseDashboard({
       "pass": ADMIN_PASSWORD
     }
   ]
-});
+}, { allowInsecureHTTP: true });
 
 app.use('/public', express.static(path.join(__dirname, '/public')));
 
