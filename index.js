@@ -3,6 +3,10 @@ const ParseServer = require('parse-server').ParseServer;
 const ParseDashboard = require('parse-dashboard');
 const app = express();
 const path = require('path');
+const FSFilesAdapter = require('@parse/fs-files-adapter');
+
+const fsAdapter = new FSFilesAdapter();
+
 const {
   DATABASE_URL,
   API_PATH, 
@@ -24,6 +28,7 @@ var api = new ParseServer({
   appId: APP_ID,
   masterKey: MASTER_KEY,
   serverURL: `${HOST}:${PORT}${API_PATH}`,
+  filesAdapter: fsAdapter,
   liveQuery: {
     classNames: ['Test'],
   }

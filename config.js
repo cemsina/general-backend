@@ -4,7 +4,7 @@ module.exports = {
     HOST: process.env.HOST || 'http://localhost',
     SERVER_URL: process.env.SERVER_URL || 'http://localhost:1337/api',
     API_PATH: process.env.API_PATH || '/api',
-    DASHBOARD_PATH: process.env.DASHBOARD_PATH || '/dashboard',
+    DASHBOARD_PATH: process.env.DASHBOARD_PATH || '/',
     PORT: process.env.PORT || 1337,
     CLOUD_CODE_MAIN: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
     APP_ID: process.env.APP_ID || 'APP_ID',
